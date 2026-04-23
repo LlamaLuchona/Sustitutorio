@@ -1,0 +1,107 @@
+/* 1. Estructura General del Footer */
+.footer {
+  background-color: #0f0f0f; /* Negro oscuro corporativo */
+  color: white;
+  padding: 60px 0 30px 0;
+  font-family: Arial, sans-serif;
+  margin-top: 50px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  gap: 50px;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+/* 2. Logotipo y Descripción */
+.footer-logo {
+  height: 65px;
+  margin-bottom: 20px;
+}
+
+.footer-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cccccc;
+  max-width: 280px;
+}
+
+/* 3. Títulos de las Columnas */
+.footer-title {
+  color: #e31e24; /* Rojo de tu marca */
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* 4. Estilos de Listas y Enlaces */
+.footer-links, .contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li, .contact-info li {
+  margin-bottom: 15px;
+}
+
+.footer-links a, .contact-info a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+/* 5. Efecto Interactivo (Hover) */
+.footer-links a:hover, .contact-info a:hover {
+  color: #e31e24;
+  transform: translateX(8px); /* Desplazamiento suave */
+}
+
+/* 6. Créditos al final */
+.footer-bottom {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #222;
+  font-size: 12px;
+  color: #666666;
+}
+
+/* 7. Ajuste para dispositivos móviles */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  .footer-desc {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Si tus servicios usan clases como .service-row o similares */
+  .footer-container, 
+  .service-container { 
+    flex-direction: column !important; /* Todo uno debajo del otro */
+    text-align: center;
+  }
+
+  /* Asegura que las imágenes de servicios no se vean apretadas */
+  .img-sst, .img-sunafil, .img-contable {
+    width: 100% !important;
+    height: 250px !important;
+    background-size: cover;
+  }
+}

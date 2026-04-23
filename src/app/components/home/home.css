@@ -1,0 +1,86 @@
+/* Contenedor Principal con Imagen de Fondo */
+.hero {
+  height: 100vh;
+  margin-top: 90px;
+  height: calc(100vh - 90px);
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+              url('/carrusel.png') no-repeat center center/cover; /* */
+}
+
+/* Capa sobre la imagen para alinear el contenido */
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 8%;
+}
+
+/* Contenedor de Texto */
+.content {
+  color: white;
+  max-width: 800px;
+}
+
+/* Etiqueta roja lateral: ESTUDIO CONTABLE */
+.subtitle {
+  border-left: 4px solid #e31e24; 
+  padding-left: 15px;
+  letter-spacing: 3px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* Título Principal con Typed.js */
+.main-title {
+  font-size: 55px;
+  margin: 20px 0;
+  line-height: 1.2;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/* Texto que se escribe solo */
+.written-lines {
+  color: #e31e24;
+  display: inline-block;
+  font-weight: bold;
+}
+
+/* Párrafo descriptivo */
+.description {
+  font-size: 16px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Botón de Servicios */
+.btn-red {
+  background: #e31e24;
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.btn-red:hover {
+  background: #b3161b; 
+}
+
+.typed-cursor {
+  color: white;
+  font-size: 50px;
+  opacity: 1;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
